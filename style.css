@@ -1,0 +1,430 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color:rgb(194, 238, 255);    /*rgb(120, 214, 252)  /   #1cbbf0 */
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.img-logo{
+    border-radius: 50%;
+    height:80px;
+    width: 80px;
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+.header-color{
+    background-color: rgb(28, 187, 240, 0.5);
+}
+
+header{
+    background-color: rgb(245, 244, 244);
+}
+
+.logo-name{
+    color:rgb(0, 61, 131);  /* rgb(8, 73, 194) */
+}
+
+.logo-name:hover{
+    color: #274274;
+}
+
+.second-view{
+    display: flex;
+    flex-direction: row;
+}
+
+.pvr-headbar{
+    background-color: rgb(0, 34, 66);    /* rgb(0, 52, 119)  rgb(3, 40, 54)  rgb(0, 42, 82) */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.pvr-headbar .list-inline li a {
+    color: #fff; /* Set text color to white */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Optionally adjust font weight */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.pvr-headbar .list-inline li a:hover {
+    color: #ff6600; /* Change text color on hover */
+}
+
+/* Optionally, you can style the phone icon */
+.pvr-headbar .list-inline li a .fa-phone {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    font-family: Open Sans, sans-serif; /* Specify your chosen font */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    color: #333; /* Adjust font color as needed */
+    text-transform: uppercase; /* Convert text to uppercase */
+    padding: 10px 15px; /* Adjust padding as needed */
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00397a; /* Change color on hover */
+}
+
+.main-body {
+    height: 300px; /* Set your desired height */
+    overflow: hidden; /* To prevent the image from overflowing */
+}
+
+.main-body img {
+    width: 100%;  /*Make the image expand to full width */
+    height: 100%; /* Maintain aspect ratio */
+    opacity: 0.8; /* Set the opacity to make it transparent */
+}
+
+
+
+.image-container {
+    position: relative; /* Set the container to a relative position */
+    width: 100%; /* Optional: Set width as needed */
+    height: 300px; /* Optional: Set height as needed */
+    background-color: #1cbbf0;  /*rgb(91, 205, 250)*/
+    
+   
+}
+
+.image-container img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    opacity: 1.0;      /* Adjust the value between 0 (completely transparent) and 1 (completely opaque) */
+    
+}
+
+.image-text {
+    position: absolute; /* Position the text relative to the container */
+    top: 40%; /* Position the text 50% from the top */
+    left: 50%; /* Position the text 50% from the left */
+    font-weight: bold;
+    transform: translate(-50%, -50%);/* Center the text horizontally and vertically */
+    text-align: center; /* Optional: Center align the text */
+    color: white; /* Set text color */
+    background-color: rgba(0, 0, 0, 0.0); /* Set background color with transparency */
+    font-size: 30px;
+    padding: 20px; /* Optional: Add padding */
+}
+
+.image-text h2 {
+    margin-bottom: 10px; /* Optional: Add margin to the heading */
+    font-weight: bold;
+    font-size: 35px;
+}
+
+@media (max-width: 500px) {
+    .image-text{
+        position:absolute;
+        top:40%;
+        left:50%;
+        justify-content: center;
+        text-align: center;
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+
+.sidebars{
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.services{
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.text_decoration-services{
+    text-decoration: none;
+}
+
+
+.footer{
+    background-color: rgb(3, 40, 54); /* rgb(5, 38, 51) */
+    color: white;
+}
+
+.Brands{
+    background-color: #f9f9f9;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.font-textcolor{
+    color: black;
+}
+
+.arrow{
+    color: black;
+}
+
+@media (max-width:490px) {
+    .icons{
+        font-size: large;
+    }
+}
+
+.icons{
+    font-size: 35px;
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.carousel-img-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 800px;
+    height:350px;
+    margin: auto;
+  }
+
+  /* Set dimensions for carousel container */
+  #myCarousel {
+    width: 700px;
+    height: 400px;
+  }
+
+/*----------------------------------------------------------------------------------------------*/
+/* CSS of side bar of services and support */
+
+.single-service img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.single-service h1,
+.single-service h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+.single-service h5 {
+    color: #666;
+    font-style: italic;
+}
+
+.service-details {
+    margin-bottom: 30px;
+}
+
+.service-details ul {
+    margin-left: 20px;
+}
+
+.service-details ul li {
+    margin-bottom: 10px;
+}
+
+.service-details ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    color: #333;
+}
+
+.textcolored {
+    color: rgb(0, 0, 0); /* rgb(21, 42, 88) */
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.widget-title {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.services-list ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.services-list ul li {
+    padding: 5px 0;
+}
+
+.services-list ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.services-list ul li a:hover {
+    color: #333;
+}
+
+.appointment-form {
+    margin-top: 30px;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.appointment-form textarea {
+    resize: vertical;
+}
+
+.btn-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+}
+
+.widget-title.line-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.salesborder{
+    
+    border-radius: 5px;
+}
+
+.sales-header{
+    display: flex;
+    justify-content: center;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/* footer links of twitter, instagram, & facebook */
+
+.logoicons {
+    display: flex;
+    flex-direction: row; /* Make list items align horizontally */
+    /*padding: 0;  Remove default padding */
+}
+
+.logoicons li {
+    list-style: none; /* Remove default list style */
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+.logoicons li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+/* .logoicons img {
+    transform: rotate(-90deg);  Rotate the images sideways 
+} */
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+/* CSS for Sales and services offered*/
+/* Styles for owl carousel */
+
+
+.owl-carousel-3col {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.owl-carousel-3col .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.owl-carousel-3col .owl-stage {
+    display: flex;
+    transition: all 0.25s ease 0s;
+}
+
+.owl-carousel-3col .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel-3col .item {
+    width: 100%;
+    text-align: center;
+}
+
+.owl-carousel-3col .thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+.owl-carousel-3col .border-2px {
+    border: 2px solid transparent;
+}
+
+.owl-carousel-3col .border-2px.bg-white {
+    background-color: #fff;
+}
+
+.owl-carousel-3col h4 a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.owl-carousel-3col h4 a:hover {
+    color: #ff6347;
+}
+
+.owl-carousel-3col .btn-theme-colored {
+    background-color: #ff6347;
+    border-color: #ff6347;
+}
+
+.owl-carousel-3col .btn-theme-colored:hover {
+    background-color: #cc4b33;
+    border-color: #cc4b33;
+}
+
+/*------------------------------------------------------------------*/
